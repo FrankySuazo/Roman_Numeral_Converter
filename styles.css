@@ -27,3 +27,10 @@ body {
   background-color: var(--gray-85);
   color: var(--gray-05);
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
