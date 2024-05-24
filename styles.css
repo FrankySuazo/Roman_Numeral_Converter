@@ -41,3 +41,14 @@ h1 {
   max-width: 350px;
   font-family: 'Castoro Titling', cursive;
 }
+
+form {
+  color: var(--gray-05);
+  margin: auto 25px;
+  padding: 15px auto;
+  border: 3px solid var(--gray-05);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  background-color: var(--gray-75);
+}
