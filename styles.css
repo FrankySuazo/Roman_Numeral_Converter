@@ -34,3 +34,10 @@ main {
   align-items: center;
   justify-content: center;
 }
+
+h1 {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 350px;
+  font-family: 'Castoro Titling', cursive;
+}
