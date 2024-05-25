@@ -59,3 +59,10 @@ fieldset {
   padding: 25px;
   margin: 10px 20px;
 }
+
+label {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
