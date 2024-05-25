@@ -52,3 +52,10 @@ form {
   max-width: 500px;
   background-color: var(--gray-75);
 }
+
+fieldset {
+  border: 0 none;
+  height: 100%;
+  padding: 25px;
+  margin: 10px 20px;
+}
