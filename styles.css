@@ -115,3 +115,7 @@ button {
   border: 3px solid var(--danger-color);
   color: var(--danger-color);
 }
+
+.hidden {
+  display: none;
+}
