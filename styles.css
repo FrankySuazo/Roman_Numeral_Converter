@@ -108,3 +108,10 @@ button {
   overflow-wrap: break-word;
   text-align: center;
 }
+
+.alert {
+  font-size: 2rem;
+  background-color: var(--danger-background);
+  border: 3px solid var(--danger-color);
+  color: var(--danger-color);
+}
