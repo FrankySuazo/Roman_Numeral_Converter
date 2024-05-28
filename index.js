@@ -19,4 +19,11 @@ const convertToRoman = num => {
       ['IV', 4],
       ['I', 1]
     ];
+    const res = [];
+  
+    ref.forEach(function (arr) {
+      while (num >= arr[1]) {
+        res.push(arr[0]);
+        num -= arr[1];
+      }
     });
