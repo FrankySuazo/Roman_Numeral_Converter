@@ -55,3 +55,8 @@ const clearOutput = () => {
   output.innerText = '';
   output.classList.remove('alert');
 };
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  updateUI();
+});
