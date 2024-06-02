@@ -60,3 +60,7 @@ form.addEventListener('submit', e => {
   e.preventDefault();
   updateUI();
 });
+
+convertButton.addEventListener('click', () => {
+  updateUI();
+});
