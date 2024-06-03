@@ -64,3 +64,12 @@ form.addEventListener('submit', e => {
 convertButton.addEventListener('click', () => {
   updateUI();
 });
+
+
+const updateUI = () => {
+  const numStr = document.getElementById('number').value;
+  const int = parseInt(numStr, 10);
+
+  output.classList.remove('hidden');
+
+  clearOutput();
