@@ -73,3 +73,8 @@ const updateUI = () => {
   output.classList.remove('hidden');
 
   clearOutput();
+  
+  if (isValid(numStr, int)) {
+    output.innerText = convertToRoman(int);
+  }
+};
