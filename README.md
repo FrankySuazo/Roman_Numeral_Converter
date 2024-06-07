@@ -1,3 +1,16 @@
-Functional Programming is a popular approach to software development. In Functional Programming, developers organize code into smaller functions, then combine those functions to build complex programs.
+In this project is based on Roman numerals. Roman numerals are based on seven symbols and can be written using various combinations to represent Arabic numerals. For example:
 
-In this spreadsheet application project, you'll learn about parsing and evaluating mathematical expressions, implementing spreadsheet functions, handling cell references, and creating interactive web interfaces. You'll learn how to dynamically update the page based on user input.
+Roman numerals	Arabic numerals
+    M	1000
+    CM	900
+    D	500
+    CD	400
+    C	100
+    XC	90
+    L	50
+    XL	40
+    X	10
+    IX	9
+    V	5
+    IV	4
+    I	1
