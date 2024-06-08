@@ -1,7 +1,9 @@
+//HTML Imports
 const form = document.getElementById('form');
 const convertButton = document.getElementById('convert-btn');
 const output = document.getElementById('output');
 
+//Roman numbers convert chart
 const convertToRoman = num => {
   const ref = [
     ['M', 1000],
@@ -20,6 +22,7 @@ const convertToRoman = num => {
   ];
   const res = [];
 
+  //Small function that goes through the chart
   ref.forEach(function (arr) {
     while (num >= arr[1]) {
       res.push(arr[0]);
@@ -30,6 +33,7 @@ const convertToRoman = num => {
   return res.join('');
 };
 
+//User input validations
 const isValid = (str, int) => {
   let errText = '';
 
@@ -40,7 +44,7 @@ const isValid = (str, int) => {
   } else if (int > 3999) {
     errText = 'Please enter a number less than or equal to 3999.';
   } else {
-    // No errors detected
+    // When no errors detected
     return true;
   }
 
@@ -51,11 +55,13 @@ const isValid = (str, int) => {
   return false;
 };
 
+//To clear function
 const clearOutput = () => {
   output.innerText = '';
   output.classList.remove('alert');
 };
 
+//The submition 'activity'
 form.addEventListener('submit', e => {
   e.preventDefault();
   updateUI();
