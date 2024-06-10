@@ -81,6 +81,7 @@ const updateUI = () => {
 
   clearOutput();
 
+  //The 'knot' to tie everything together
   if (isValid(numStr, int)) {
     output.innerText = convertToRoman(int);
   }
