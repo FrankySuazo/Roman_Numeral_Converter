@@ -1,24 +1,24 @@
 //HTML Imports
-const form = document.getElementById('form');
-const convertButton = document.getElementById('convert-btn');
-const output = document.getElementById('output');
+const form = document.getElementById("form");
+const convertButton = document.getElementById("convert-btn");
+const output = document.getElementById("output");
 
 //Roman numbers convert chart
-const convertToRoman = num => {
+const convertToRoman = (num) => {
   const ref = [
-    ['M', 1000],
-    ['CM', 900],
-    ['D', 500],
-    ['CD', 400],
-    ['C', 100],
-    ['XC', 90],
-    ['L', 50],
-    ['XL', 40],
-    ['X', 10],
-    ['IX', 9],
-    ['V', 5],
-    ['IV', 4],
-    ['I', 1]
+    ["M", 1000],
+    ["CM", 900],
+    ["D", 500],
+    ["CD", 400],
+    ["C", 100],
+    ["XC", 90],
+    ["L", 50],
+    ["XL", 40],
+    ["X", 10],
+    ["IX", 9],
+    ["V", 5],
+    ["IV", 4],
+    ["I", 1],
   ];
   const res = [];
 
@@ -30,19 +30,19 @@ const convertToRoman = num => {
     }
   });
 
-  return res.join('');
+  return res.join("");
 };
 
 //User input validations
 const isValid = (str, int) => {
-  let errText = '';
+  let errText = "";
 
   if (!str || str.match(/[e.]/g)) {
-    errText = 'Please enter a valid number.';
+    errText = "Please enter a valid number.";
   } else if (int < 1) {
-    errText = 'Please enter a number greater than or equal to 1.';
+    errText = "Please enter a number greater than or equal to 1.";
   } else if (int > 3999) {
-    errText = 'Please enter a number less than or equal to 3999.';
+    errText = "Please enter a number less than or equal to 3999.";
   } else {
     // When no errors detected
     return true;
@@ -50,37 +50,37 @@ const isValid = (str, int) => {
 
   // Handle error text and output styling
   output.innerText = errText;
-  output.classList.add('alert');
+  output.classList.add("alert");
 
   return false;
 };
 
 //To clear function
 const clearOutput = () => {
-  output.innerText = '';
-  output.classList.remove('alert');
+  output.innerText = "";
+  output.classList.remove("alert");
 };
 
 //The submition 'activity'
-form.addEventListener('submit', e => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
   updateUI();
 });
 
 //Sending the information to an 'API' after the click
-convertButton.addEventListener('click', () => {
+convertButton.addEventListener("click", () => {
   updateUI();
 });
 
 //The 'API' created for the button action above
 const updateUI = () => {
-  const numStr = document.getElementById('number').value;
+  const numStr = document.getElementById("number").value;
   const int = parseInt(numStr, 10);
 
-  output.classList.remove('hidden');
+  output.classList.remove("hidden");
 
   clearOutput();
-  
+
   if (isValid(numStr, int)) {
     output.innerText = convertToRoman(int);
   }
