@@ -67,11 +67,12 @@ form.addEventListener('submit', e => {
   updateUI();
 });
 
+//Sending the information to an 'API' after the click
 convertButton.addEventListener('click', () => {
   updateUI();
 });
 
-
+//The 'API' created for the button action above
 const updateUI = () => {
   const numStr = document.getElementById('number').value;
   const int = parseInt(numStr, 10);
